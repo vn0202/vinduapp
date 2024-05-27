@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<html lang="es-AR" class="no-js">
+<head>
+    <style>img.lazy {
+        min-height: 1px
+    }</style>
+    <!--         <meta charset="utf-8"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <title>Vindu</title>
+    <link rel="icon" type="image/png" href="/wp-content/themes/html5blank-stable/img/logo-sin-texto.png">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/wp-content/themes/html5blank-stable/styles/new_home.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('#test');
+
+            const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const callback = (entries, observer) => {
+                console.log(1);
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        const src = img.getAttribute('data-src');
+                        if (src) {
+                            img.src = `${src}`;
+                            observer.unobserve(img);
+                        }
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(callback, options);
+
+            images.forEach(image => {
+                observer.observe(image);
+            });
+        });
+
+    </script>
+</head>
+<body data-rsssl=1>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a>
+    to improve your experience.</p>
+<![endif]-->
+<div class="container-fluid">
+
+    <!-- barra de navegacion -->
+
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top barra_navegacion py-0 pl-0 pr-3">
+
+        <a class="navbar-brand ml-5 mr-4" href="#">
+            <img class="lu_logo p-1 lazy"
+                 src="/wp-content/themes/html5blank-stable/img/logo_vindu_nuevo_restyling.png"
+
+                 alt="logo vindu">
+        </a>
+        <button class="navbar-toggler mr-5 boton_expand" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ml-5 py-3" id="navbarNav">
+            <ul class="navbar-nav p-0">
+                <li class="nav-item">
+                    <a class="btn btn-sm boton_barra_navegacion text-nowrap" href="#que_es_vindu" role="button">QUÉ ES
+                        VINDU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-sm boton_barra_navegacion text-nowrap btn_comofunciona" href="#como_funciona"
+                       role="button">CÓMO FUNCIONA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-sm boton_barra_navegacion text-nowrap" href="#por_que" role="button">POR QUÉ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-sm boton_barra_navegacion text-nowrap" href="#planes" role="button">PLANES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-sm boton_barra_navegacion text-nowrap iniciar_sesion"
+                       href="https://app.vinduapp.com" role="button">INICIAR SESIÓN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-sm boton_barra_navegacion_logo boton_barra_navegacion_logo_insta p-0 text-nowrap"
+                       href="https://www.instagram.com/vinduapp/" target="_blank" role="button"><img
+                        class="rounded-circle logos_barra lazy"
+                        src="/wp-content/themes/html5blank-stable/img/logo_insta.png"
+                        data-src="/wp-content/themes/html5blank-stable/img/logo_insta.png"
+                        alt="vindu app "></a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-sm boton_barra_navegacion_logo boton_barra_navegacion_logo_whats p-0 text-nowrap"
+                       href="https://wa.me/541140264373" target="_blank" role="button"><img
+                        class="rounded-circle logos_barra lazy"
+                        src="/wp-content/themes/html5blank-stable/img/logo_whats.png"
+                        data-src="/wp-content/themes/html5blank-stable/img/logo_whats.png"
+                        alt="vindu app "></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- fin barra -->
+
+    <!-- Logo y parrafos -->
+    <div class="row mt-5">
+        <div class="col-12 p-0">
+            <img class="float-right mock_up pt-5 lazy"
+                 src="/wp-content/themes/html5blank-stable/img/new_mock_inicial_restyling4.png"
+               >
+            <div class="pl-5 py-5 contenedor_benvenidos">
+                <p class="bienvenidos_app pt-5">BIENVENIDOS</p>
+
+                <p class="parrafo_app pt-1">
+                    A una nueva forma de vender ropa y accesorios.<br/>
+                    Somos una comunidad única en el mundo de la moda, una nueva aplicación, un espacio cuidado para tu
+                    marca.
+                </p>
+
+                <div class="row">
+                    <div class="mx-auto">
+                        <a class="btn btn-lg rounded-pill boton_contacto px-5" href="/nuevahome/contacto/"
+                           role="button">CONTACTO</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+                <img class="float-left mockup_celulares ml-5 mt-3 pt-5 lazy"
+                     src="/wp-content/themes/html5blank-stable/img/imagen_celulares.jpg"
+                     data-src="/wp-content/themes/html5blank-stable/img/imagen_celulares.jpg"
+                     alt="vindu app ">
+            </div>
+            <div id="que_es_vindu" class="col-lg-5 col-md-5 offset-lg-6 offset-md-6 col-sm-12 p-0">
+                <p class="bloque2_primer_parrafo text-left pt-5">SOMOS UN MOBILE MARKETPLACE QUE CONECTA MILES DE
+                    USUARIOS CON DISEÑADORES DE MODA DE TODO EL PAÍS</p>
+                <p class="bloque2_segundo_parrafo text-left">Apoyamos a diseñadores independientes y marcas
+                    emprendedoras para hacer crecer su negocio ofreciéndoles
+                    un nuevo canal de comunicación y ventas. <br/>
+                    En VINDU miles de compradores buscan una alternativa, variedad de diseños, algo especial con un
+                    toque humano,
+                    FASHION y de simple acceso en donde deciden qué marcas seguir.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- DESCRIPCION -->
+    <div id="como_funciona" class="row justify-content-lg-center text-center bloque_descripcion py-5">
+        <div class="col-12">
+            <h1 class="titulo_descripcion pt-5">FÁCIL, RÁPIDO Y SEGURO</h1>
+            <p class="bloque_descripcion_primer_parrafo pb-5">No requiere conocimientos técnicos.</br>
+                Estamos integrados con <span class="font-weight-bold">Mercado Pago</span> y <span
+                    class="font-weight-bold">Tiendanube</span>.</br>
+                Lo que hace muy fácil y transparente el proceso de alta</br> en la plataforma.</br>
+                En tres simples pasos ya podés estar vendiendo en <span class="font-weight-bold">VINDU</span></p>
+        </div>
+        <div class="col-12 pt-3">
+            <div class="d-inline mx-3">
+                <img class="img-fluid shadow bg-white descripcion_img lazy"
+                     src="/wp-content/themes/html5blank-stable/img/descripcion_1_nueva.png"
+                     data-src="/wp-content/themes/html5blank-stable/img/descripcion_1_nueva.png"
+                     alt="vindu app ">
+            </div>
+            <div class="d-inline mx-3">
+                <img class="img-fluid shadow bg-white descripcion_img lazy"
+                     src="/wp-content/themes/html5blank-stable/img/descripcion_2_nueva.png"
+                     data-src="/wp-content/themes/html5blank-stable/img/descripcion_2_nueva.png"
+                     alt="vindu app ">
+            </div>
+            <div class="d-inline mx-3">
+                <img class="img-fluid shadow bg-white descripcion_img lazy"
+                     src="/wp-content/themes/html5blank-stable/img/descripcion_3_nueva.png"
+                     data-src="/wp-content/themes/html5blank-stable/img/descripcion_3_nueva.png"
+                     alt="vindu app ">
+            </div>
+            <div class="d-inline mx-3">
+                <img class="img-fluid shadow bg-white descripcion_img lazy"
+                     src="/wp-content/themes/html5blank-stable/img/descripcion_4_nueva.png"
+                     data-src="/wp-content/themes/html5blank-stable/img/descripcion_4_nueva.png"
+                     alt="vindu app ">
+            </div>
+        </div>
+    </div>
+    <!-- FIN DESCRIPCION -->
+    <!-- BLOQUE VENTAJAS -->
+    <div id="por_que" class="row justify-content-center text-center bg-white bloque_ventajas">
+        <div class="col-lg-6 col-md-6 col-sm-12 p-0">
+            <h1 class="titulo_descripcion_ventajas pt-5">VENTAJAS Y BENEFICIOS</h1>
+            <img class="img-fluid pt-4 lazy"
+                 src="/wp-content/themes/html5blank-stable/img/imagen_ventajas_beneficios.png"
+                 data-src="/wp-content/themes/html5blank-stable/img/imagen_ventajas_beneficios.png"
+                 alt="vindu app ">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 pb-3">
+            <img class="ventajas mr-5 mt-5 lazy"
+                 src="/wp-content/themes/html5blank-stable/img/mesgratis.png"
+                 data-src="/wp-content/themes/html5blank-stable/img/mesgratis.png" alt="vindu app ">
+            <img class="ventajas mr-5 mt-5 lazy"
+                 src="/wp-content/themes/html5blank-stable/img/inversionycostos.png"
+                 data-src="/wp-content/themes/html5blank-stable/img/inversionycostos.png" alt="vindu app ">
+            <img class="ventajas mr-5 mt-5 lazy"
+                 src="/wp-content/themes/html5blank-stable/img/paneldecontrol.png"
+                 data-src="/wp-content/themes/html5blank-stable/img/paneldecontrol.png" alt="vindu app ">
+            <img class="ventajas1 mr-5 mt-5 lazy"
+                 src="/wp-content/themes/html5blank-stable/img/promocionydifusion.png"
+                 data-src="/wp-content/themes/html5blank-stable/img/promocionydifusion.png" alt="vindu app ">
+        </div>
+    </div>
+    <!-- FIN BLOQUE VENTAJAS -->
+    <!-- BLOQUE NUESTROS PLANES -->
+    <div id="planes" class="row bloque_nuestros_planes">
+        <div class="col-lg-12 col-md-12 col-sm-12 p-0">
+            <img class="img-fluid img_nuestos_planes lazy"
+                 src="/wp-content/themes/html5blank-stable/img/nuestros_planes.png"
+                 data-src="/wp-content/themes/html5blank-stable/img/nuestros_planes.png" alt="vindu app ">
+        </div>
+    </div>
+    <!-- FIN BLOQUE NUESTROS PLANES -->
+    <!-- SLIDES MARCAS -->
+    <!-- FIN SLIDES MARCAS -->
+    <!-- Footer & form -->
+    <div class="row justify-content-center lu_footer py-5">
+        <div class="col-lg-12 col-md-12 col-sm-12 pb-3">
+            <p class="text-center sugerencia_footer">Qué estás esperando? Sumate a la comunidad Vindu</p>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 p-0">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="row justify-content-center">
+                        <a href="https://www.instagram.com/vinduapp/" target="_blank" class="pr-md-4 pr-lg-4 pr-sm-4">
+                            <img class="lu_logos lazy"
+                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
+                                 data-src="https://vinduapp.com/wp-content/themes/html5blank-stable/img/logo_insta.png"
+                                 alt="vindu app ">
+                        </a>
+                        <a href="https://wa.me/541140264373" target="_blank" class="pr-lg-5 pr-md-5 pl-sm-4">
+                            <img class="lu_logos lazy"
+                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
+                                 data-src="https://vinduapp.com/wp-content/themes/html5blank-stable/img/logo_whats.png"
+                                 alt="vindu app ">
+                        </a>
+                        <img class="lu_barra lazy"
+                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
+                             data-src="https://vinduapp.com/wp-content/themes/html5blank-stable/img/barra_vertical.png"
+                             alt="vindu app ">
+                    </div>
+                </div>
+                <div class="text-center direccion py-2">
+                           <span> Carlos Pelegrini 1253 - CABA <br>
+                            <a class="lu_mailto_ft" href="mailto:info@vinduapp.com">info@vinduapp.com</a></span>
+                </div>
+            </div>
+            <div class="row justify-content-center py-3">
+                <div class="col-4 offset-1 p-0">
+                    <a href="https://apps.apple.com/us/app/vindu/id1477522977?ls=1" target="_blank" class="">
+                        <img class="lu_appstore_ft lazy"
+                             src="/wp-content/themes/html5blank-stable/img/store_app_image.png"
+                             data-src="/wp-content/themes/html5blank-stable/img/store_app_image.png"
+                             alt="store apple">
+                    </a>
+                </div>
+                <div class="col-4 p-0">
+                    <a href="https://play.google.com/store/apps/details?id=com.anting.vinduapp" target="_blank"
+                       class="">
+                        <img class="lu_googlestore_ft lazy"
+                             src="/wp-content/themes/html5blank-stable/img/store_google_image.png"
+                             data-src="/wp-content/themes/html5blank-stable/img/store_google_image.png"
+                             alt="store google">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12 py-3">
+            <div class="row justify-content-center">
+                <a href="http://qr.afip.gob.ar/?qr=xaVupGPXOaixJFvoDyhtaw,," target="_F960AFIPInfo">
+                    <img id="afip-logo" src="https://www.afip.gob.ar/images/f960/DATAWEB.jpg"
+                         data-src="https://www.afip.gob.ar/images/f960/DATAWEB.jpg" width="100" border="0">
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 px-lg-5 px-md-5">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <div class="lu_footer_form pt-1 pb-3 pr-5">
+                        <span class="lu_parrafos_form">SI QUIERES RECIBIR MÁS INFORMACIÓN DEJANOS TU E-MAIL</span>
+                        <form id="suscript_form_home" action="" method="POST">
+                            <div class="form-row pt-2">
+                                <div class="col-lg-12 col-md-12 col-sm-12 p-0">
+                                    <input type="text" class="form-control form-control-md lu_input_form"
+                                           placeholder="Ingresá tu e-mail para recibir más info">
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 p-0">
+                                    <button type="submit" class="btn btn-sm rounded-pill px-4 mt-3 boton_enviar">
+                                        ENVIAR
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIN FOOTER -->
+    <!-- Copyright -->
+    <div class="row justify-content-center">
+        <div class="text-center lu_copyright">
+            <div class="p-1" id="test">
+                Copyright 2017 - Vindu SA es una marca registrada - Diseño y desarrollo by <img
+                class="lu_logo_anting lazy"
+                src="/wp-content/themes/html5blank-stable/img/anting-logo.png"
+                data-src="/wp-content/themes/html5blank-stable/img/anting-logo.png" alt="anting">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function () {
+        $('a[href^="#"]').click(function () {
+            var destino = $(this.hash);
+            if (destino.length == 0) {
+                destino = $('a[name="' + this.hash.substr(1) + '"]');
+            }
+            if (destino.length == 0) {
+                destino = $('html');
+            }
+            $('html, body').animate({scrollTop: destino.offset().top}, 500);
+            return false;
+        });
+
+    });
+
+
+</script>
+
+</body>
+</html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Almacenamiento en caché de objetos 7/12 objetos que utilizan disk
+Page Caching using disk: enhanced (Requested URI contains query)
+Lazy Loading
+
+Served from: vinduapp.com @ 2021-01-27 03:19:45 by W3 Total Cache
+-->
