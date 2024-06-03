@@ -122,11 +122,11 @@ input:focus {
 
 @font-face {
 	font-family:'Font-Name';
-	src:url('/web/20180827233446im_/http://vinduapp.com/wp-content/themes/html5blank-stable/fonts/font-name.eot');
-	src:url('/web/20180827233446im_/http://vinduapp.com/wp-content/themes/html5blank-stable/fonts/font-name.eot#iefix') format('embedded-opentype'),
-		url('/web/20180827233446im_/http://vinduapp.com/wp-content/themes/html5blank-stable/fonts/font-name.woff') format('woff'),
-		url('/web/20180827233446im_/http://vinduapp.com/wp-content/themes/html5blank-stable/fonts/font-name.ttf') format('truetype'),
-		url('/web/20180827233446im_/http://vinduapp.com/wp-content/themes/html5blank-stable/fonts/font-name.svg#font-name') format('svg');
+	src:url('https://vinduapp.com/wp-content/themes/html5blank-stable/fonts/font-name.eot');
+	src:url('https://vinduapp.com/wp-content/themes/html5blank-stable/fonts/font-name.eot#iefix') format('embedded-opentype'),
+		url('https://vinduapp.com/wp-content/themes/html5blank-stable/fonts/font-name.woff') format('woff'),
+		url('https://vinduapp.com/wp-content/themes/html5blank-stable/fonts/font-name.ttf') format('truetype'),
+		url('https://vinduapp.com/wp-content/themes/html5blank-stable/fonts/font-name.svg#font-name') format('svg');
     font-weight:normal;
     font-style:normal;
 }
