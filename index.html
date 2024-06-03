@@ -35,7 +35,6 @@
             };
 
             const callback = (entries, observer) => {
-                console.log(1);
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         const img = entry.target;
@@ -94,10 +93,7 @@
                 <li class="nav-item">
                     <a class="btn btn-sm boton_barra_navegacion text-nowrap" href="#planes" role="button">PLANES</a>
                 </li>
-                <li class="nav-item">
-                    <a class="btn btn-sm boton_barra_navegacion text-nowrap iniciar_sesion"
-                       href="https://app.vinduapp.com" role="button">INICIAR SESIÓN</a>
-                </li>
+
                 <li class="nav-item">
                     <a class="btn btn-sm boton_barra_navegacion_logo boton_barra_navegacion_logo_insta p-0 text-nowrap"
                        href="https://www.instagram.com/vinduapp/" target="_blank" role="button"><img
@@ -246,19 +242,19 @@
                     <div class="row justify-content-center">
                         <a href="https://www.instagram.com/vinduapp/" target="_blank" class="pr-md-4 pr-lg-4 pr-sm-4">
                             <img class="lu_logos lazy"
-                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                                 data-src="https://vinduapp.com/wp-content/themes/html5blank-stable/img/logo_insta.png"
+                                 src="/wp-content/themes/html5blank-stable/img/logo_insta.png"
+                                 data-src="/wp-content/themes/html5blank-stable/img/logo_insta.png"
                                  alt="vindu app ">
                         </a>
                         <a href="https://wa.me/541140264373" target="_blank" class="pr-lg-5 pr-md-5 pl-sm-4">
                             <img class="lu_logos lazy"
-                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                                 data-src="https://vinduapp.com/wp-content/themes/html5blank-stable/img/logo_whats.png"
+                                 src="/wp-content/themes/html5blank-stable/img/logo_whats.png"
+                                 data-src="/wp-content/themes/html5blank-stable/img/logo_whats.png"
                                  alt="vindu app ">
                         </a>
                         <img class="lu_barra lazy"
-                             src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                             data-src="https://vinduapp.com/wp-content/themes/html5blank-stable/img/barra_vertical.png"
+                             src="/wp-content/themes/html5blank-stable/img/barra_vertical.png"
+                             data-src="/wp-content/themes/html5blank-stable/img/barra_vertical.png"
                              alt="vindu app ">
                     </div>
                 </div>
@@ -295,10 +291,13 @@
                 </a>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 px-lg-5 px-md-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 px-lg-5 px-md-5 text-center text-md-left" >
             <div class="row justify-content-center">
                 <div class="col">
-                    <div class="lu_footer_form pt-1 pb-3 pr-5">
+                    <div>
+                        <a style="color: white; font-size: 18px" href="/privacy.html">Privacy</a>
+                    </div>
+                    <div class="lu_footer_form pt-1 pb-3 pr-md-5">
                         <span class="lu_parrafos_form">SI QUIERES RECIBIR MÁS INFORMACIÓN DEJANOS TU E-MAIL</span>
                         <form id="suscript_form_home" action="" method="POST">
                             <div class="form-row pt-2">
@@ -307,7 +306,7 @@
                                            placeholder="Ingresá tu e-mail para recibir más info">
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 p-0">
-                                    <button type="submit" class="btn btn-sm rounded-pill px-4 mt-3 boton_enviar">
+                                    <button disabled type="submit" class="btn btn-sm rounded-pill px-4 mt-3 boton_enviar">
                                         ENVIAR
                                     </button>
                                 </div>
